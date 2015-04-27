@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Author   : Márcio José Mantau
+ * Version  : 1.0
+ * Date     : 02/10/2013
+ * Copyright:
+-->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.udesc.wutb"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <!-- Default permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <!-- Permissions used ONLY for experiemnts -->
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/game"
+        android:label="@string/str_appname"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="br.udesc.wutb.activity.ActivitySplash"
+            android:label="@string/str_appname"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.udesc.wutb.activity.ActivityLogin"
+            android:label="@string/str_appname"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="br.udesc.wutb.activity.ActivityGame"
+            android:label="@string/str_appname"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="br.udesc.wutb.activity.ActivityConnection"
+            android:label="@string/str_appname"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+
+        <receiver
+            android:name="br.udesc.wutb.service.LogBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="WUTB_LOG_UPDATE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="br.udesc.ccsmocw.core.CacheCoherenceClient"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="CCS_MoCW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
