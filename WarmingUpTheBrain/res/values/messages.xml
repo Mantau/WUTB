@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Author   : Márcio José Mantau
+ * Version  : 1.0
+ * Date     : 02/10/2013
+ * Copyright:
+-->
+ 
+<resources>
+
+    <!-- message errors -->
+    <string name="error_name_not_informed">User\'s nickname not informed!</string>
+    <string name="error_email_not_informed">User\'s email not informed!</string>
+    <string name="error_team_not_selected">User\'s team not selected!</string>
+
+</resources>

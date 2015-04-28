@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Author   : Márcio José Mantau
+ * Version  : 1.0
+ * Date     : 02/10/2013
+ * Copyright:
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayoutGameConfigUserList"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:background="@drawable/header_game2"
+    android:orientation="vertical" >
+
+    <!-- Config User's List -->
+
+    <TextView
+        android:id="@+id/textViewConfigHeaderFilteringUserList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/str_filtering_user_list_options"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <CheckBox
+        android:id="@+id/checkBoxConfigUserLIstDisplayUserView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="@string/str_filtering_question_viewed" />
+
+    <CheckBox
+        android:id="@+id/checkBoxConfigUserLIstDisplayUserCorrect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="@string/str_filtering_question_correct" />
+
+    <CheckBox
+        android:id="@+id/checkBoxConfigUserLIstDisplayUserInorrect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="@string/str_filtering_question_incorrect" />
+
+    <CheckBox
+        android:id="@+id/checkBoxConfigUserLIstDisplayUserDots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="@string/str_filtering_question_dots" />
+
+</LinearLayout>

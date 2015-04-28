@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Author   : Márcio José Mantau
+ * Version  : 1.0
+ * Date     : 02/10/2013
+ * Copyright:
+-->
+ 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayoutGameQ28"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/question_othergroup" >
+
+    <TextView
+        android:id="@+id/textViewUserQ28"
+        android:layout_width="60dp"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text=" " />
+
+    <ImageView
+        android:id="@+id/imageViewQ28"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="4dp"
+        android:paddingRight="2dp"
+        android:src="@drawable/none_image" />
+
+    <TextView
+        android:id="@+id/textViewQ28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="3dp"
+        android:text="28"
+        android:textSize="18sp"
+        android:typeface="monospace" />
+
+</RelativeLayout>

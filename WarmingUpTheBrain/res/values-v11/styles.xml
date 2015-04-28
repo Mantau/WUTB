@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Author   : Márcio José Mantau
+ * Version  : 1.0
+ * Date     : 02/10/2013
+ * Copyright:
+-->
+ 
+ <resources>
+
+    <!--
+        Base application theme for API 11+. This theme completely replaces
+        AppBaseTheme from res/values/styles.xml on API 11+ devices.
+    -->
+    
+    <style 
+        name="AppBaseTheme" 
+        parent="android:Theme.Holo.Light">
+        
+        <!-- API 11 theme customizations can go here. -->
+        
+    </style>
+
+</resources>

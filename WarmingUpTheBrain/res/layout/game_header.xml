@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Author   : Márcio José Mantau
+ * Version  : 1.0
+ * Date     : 02/10/2013
+ * Copyright:
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayoutHeaderGroup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        layout="@layout/game_header_board"
+        android:gravity="center" />
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        layout="@layout/game_header_question"
+        android:gravity="center" />
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        layout="@layout/game_header_userlist"
+        android:gravity="center" />
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        layout="@layout/game_header_chat"
+        android:gravity="center" />
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        layout="@layout/game_header_terminal"
+        android:gravity="center" />
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        layout="@layout/game_header_config"
+        android:gravity="center" />
+
+</LinearLayout>

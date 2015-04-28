@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Author   : Márcio José Mantau
+ * Version  : 1.0
+ * Date     : 02/10/2013
+ * Copyright:
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayoutGameConfigGameBoard"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:background="@drawable/header_game2"
+    android:orientation="vertical" >
+
+    <!-- Config Question's board -->
+
+    <TextView
+        android:id="@+id/textViewConfigHeaderFilteringQuestions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/str_filtering_game_board_options"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupFilteringGameBoard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radioFilteringGameBoardColors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/str_filtering_game_board_colors" />
+
+        <RadioButton
+            android:id="@+id/radioFilteringGameBoardColorsAndIcons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_filtering_game_board_colors_icons" />
+
+        <RadioButton
+            android:id="@+id/radioFilteringGameBoardColorsIconsLabels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/str_filtering_game_board_colors_icons_labels" />
+    </RadioGroup>
+    
+    <CheckBox
+        android:id="@+id/checkBoxFilteringGameBoardDisplayQuestionCorrectOtherGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="@string/str_filtering_display_question_correct_othergroup" />
+
+</LinearLayout>

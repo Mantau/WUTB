@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Author   : Márcio José Mantau
+ * Version  : 1.0
+ * Date     : 02/10/2013
+ * Copyright:
+--> 
+
+<resources>
+
+    <!-- Format of questions:
+    <string-array name="NumberQuest">
+        <item >type</item>   -> 4SingleChoice, 5SingleChoice, MultiChoise, TrueOrFalse. //TODO  not yet implemented.
+        <item >catgory</item>
+        <item >content</item>
+        <item >AltA</item>
+        <item >AltB</item>
+        <item >AltC</item>
+        <item >AltD</item>
+        <item >AltE</item>
+        <item >answer</item>
+    </string-array>
+    -->
+
+	<string-array name="q01">
+	    <item >POO</item>
+        <item >Em programação orientada a objetos, a possibilidade de haver funções de mesmo nome, com funcionalidades similares em classes sem nenhuma relação entre elas, denomina-se:</item>
+        <item >Encapsulamento;</item>
+        <item >Objeto;</item>
+        <item >Classe;</item>
+        <item >Polimorfismo;</item>
+        <item >Herança;</item>
+        <item >d</item>
+    </string-array>
+    
+	<string-array name="q02">
+	    <item >POO</item>
+        <item >Na programação orientada a objetos, há dois mecanismos possíveis para criar relacionamentos entres classes: a composição e a herança. Em um programa orientado a objetos, suponha que entre duas classes X e Y exista um relacionamento de herança no qual X é subclasse de Y. Suponha também que Y seja uma subclasse de uma classe abstrata denominada Z. Por fim, suponha que existam apenas métodos públicos ou privados, tanto em Y quanto em Z.\nPara alterar esse programa de tal forma que ele permaneça o mesmo, do ponto de vista funcional para os clientes da interface pública da classe X, e que o relacionamento de herança entre X e Y seja substituído pelo de composição, um passo necessário no caso geral é definir um atributo do tipo:</item>
+        <item >X na classe Y;</item>
+        <item >X na classe Z;</item>
+        <item >Y na classe X;</item>
+        <item >Y na classe Z;</item>
+        <item >Z na classe X;</item>
+        <item >c</item>
+    </string-array>    
+    
+	<string-array name="q03">
+	    <item >POO</item>
+        <item >Com relação aos conceitos de programação orientada a objetos, é correto afirmar que:</item>
+        <item >Métodos abstratos são aqueles que não devem ser redefinidos em classes derivadas, devem ser herdados tal como foram definidos;</item>
+        <item >Métodos estáticos são aqueles que, ao serem executados, não acessam atributos de instância da classe;</item>
+        <item >Métodos finais, também conhecidos como finalizadores ou destrutores, são chamados na destruição de uma instância;</item>
+        <item >Métodos construtores são métodos chamados sobre um objeto quando ele é criado. Em Java, os construtores têm o mesmo nome da classe da qual são membros e o tipo retornado por eles é especificado na sua definição;</item>
+        <item >Métodos de classe são aqueles que executam operações que afetam objetos individuais da classe;</item>
+        <item >b</item>
+    </string-array>    
+    
+	<string-array name="q04">
+	    <item >POO</item>
+        <item >A programação orientada a objetos é baseada em diversos conceitos, tais como encapsulamento, herança, polimorfismo e abstração. Com relação a esses conceitos, é correto afirmar que:</item>
+        <item >O conceito de encapsulamento é alcançado por meio da definição da visibilidade pública aos atributos e métodos;</item>
+        <item >Herança é um mecanismo que permite que uma classe herde todo o comportamento e os atributos de outra classe. Em Java, pode-se implementar tanto a herança única quanto a herança múltipla;</item>
+        <item >Interface pode ser considerada como a forma com que um objeto se apresenta para outros, no que diz respeito aos seus atributos e métodos. Em Java, uma mesma classe não pode implementar mais de uma interface;</item>
+        <item >Polimorfismo é o uso de um mesmo nome para identificar diferentes implementações dos métodos. Seu uso é comum na definição de construtores, em que os mesmos podem ser implementados em diferentes versões para as diferentes formas de se instanciar a classe;</item>
+        <item >Para uma classe ser considerada abstrata, todos os seus métodos devem ser abstratos. Em Java, para se definir uma classe abstrata deve-se utilizar a palavra chave \"abstract\" no início de sua declaração;</item>
+        <item >d</item>
+    </string-array>    
+    
+	<string-array name="q05">
+	    <item >POO</item>
+        <item >O desenvolvimento orientado a objetos utiliza uma estratégia orientada a objetos em todo o processo, seguindo os estágios de análise orientada a objetos, projeto orientado a objetos e programação orientada a objetos.\nAssinale a opção que representa uma atividade exclusiva do projeto orientado a objetos.</item>
+        <item >Desenvolver um modelo orientado a objetos do domínio da aplicação;</item>
+        <item >Realizar um projeto de software utilizando uma linguagem de programação orientada a objetos;</item>
+        <item >Desenvolver um modelo orientado a objetos para implementar os requisitos identificados;</item>
+        <item >Identificar os conceitos, atributos e associações que são considerados de interesse;</item>
+        <item >Identificar entidades e operações que estão relacionadas com o problema a ser resolvido;</item>
+        <item >c</item>
+    </string-array>    
+    
+	<string-array name="q06">
+	    <item >POO</item>
+        <item >Sobre Programação Orientada a Objetos, analise:\nI. A encapsulação garante que apenas as interfaces necessárias para interação com o objeto estejam visíveis, e atributos internos não sejam acessíveis.\nII. O polimorfismo garante que objetos possam herdar métodos e atributos de uma superclasse para a geração de uma nova classe.\nIII. A herança possibilita que distintas operações na mesma classe tenham o mesmo nome, desde que alterada a assinatura.\nEstá correto o que se afirma em:</item>
+        <item >I, apenas;</item>
+        <item >II, apenas;</item>
+        <item >III, apenas;</item>
+        <item >II e III, apenas;</item>
+        <item >I, II e III;</item>
+        <item >a</item>
+    </string-array>    
+    
+	<string-array name="q07">
+	    <item >POO</item>
+        <item >Analise as afrmativas abaixo sobre os conceitos de Programação Orientada a Objetos.\nI. É possível que um mesmo objeto tenha mais de um método com o mesmo nome.\nII. Na implementação de objetos, a composição de objetos substitui a herança de classe. A herança de classe é definida estaticamente em tempo de compilação, enquanto a composição de objetos é definida dinamicamente em tempo de execução pela obtenção de referências a outros objetos por meio de determinado objeto. O uso da composição não viola o encapsulamento.\nIII. Em programação orientada a objetos, a classe de um objeto e seu tipo são atributos distintos: a classe de um objeto define como ele é implementado, e o tipo define o estado interno do objeto.\nAssinale a alternativa VERDADEIRA:</item>
+        <item >I, apenas;</item>
+        <item >I e II, apenas;</item>
+        <item >II III, apenas;</item>
+        <item >I e III, apenas;</item>
+        <item >I, II e III;</item>
+        <item >b</item>
+    </string-array>    
+    
+	<string-array name="q08">
+	    <item >POO</item>
+        <item >Analise as afrmativas abaixo sobre os conceitos de Programação Orientada a Objetos.\nI. A \"Herança\" possibilita a criação de novas classes a partir de classes mais genéricas.\nII. A \"Sobrecarga\" permite alterar o comportamento de um método na classe flha mantendo a mesma assinatura defnida na classe mãe.\nIII. O \"Polimorfsmo\" permite alterar o comportamento de uma classe dentro de uma hierarquia de classes.\nAssinale a alternativa VERDADEIRA:</item>
+        <item >I e II, apenas;</item>
+        <item >I e III, apenas;</item>
+        <item >II e III, apenas;</item>
+        <item >Todas as alternativas estão corretas;</item>
+        <item >Nenhuma das alternativas estão corretas;</item>
+        <item >b</item>
+    </string-array>    
+    
+	<string-array name="q09">
+	    <item >POO</item>
+        <item >Dentro do paradigma de programação orientada a objetos (POO), há um mecanismo utilizado para impedir o acesso direto ao estado de um objeto, restando apenas os métodos externos que podem alterar esses estados. Assinale a alternativa que apresenta o nome deste mecanismo.</item>
+        <item >Mensagem;</item>
+        <item >Herança;</item>
+        <item >Polimorfismo;</item>
+        <item >Encapsulamento;</item>
+        <item >Subclasse;</item>
+        <item >d</item>
+    </string-array>    
+    
+	<string-array name="q10">
+	    <item >POO</item>
+        <item >Sobre orientação a objetos, é correto afirmar:</item>
+        <item >Uma classe é o projeto do objeto. Ela informa à máquina virtual como criar um objeto de um tipo específico. Cada objeto criado a partir da classe terá os mesmos valores para as variáveis de instância da classe;</item>
+        <item >Um relacionamento de herança significa que a superclasse herdará as variáveis de instância e métodos da subclasse;</item>
+        <item >Uma interface é uma classe 100% abstrata, ou seja, uma classe que não pode ser instanciada;</item>
+        <item >Os objetos têm seu estado definido pelos métodos e seu comportamento definido nas variáveis de instância;</item>
+        <item >A principal regra prática do encapsulamento é marcar as variáveis de instância como públicas e fornecer métodos de captura e configuração privados;</item>
+        <item >c</item>
+    </string-array>    
+    
+	<string-array name="q11">
+	    <item >POO</item>
+        <item >Analise as seguintes definições:\nI. Objeto que existe depois que o processo ou o thread que o criou deixa de existir.\nII. Mecanismo pelo qual elementos mais específicos incorporam a estrutura e o comportamento de elementos mais gerais.\nIII. Lista de valores nomeados, utilizada como faixa de um determinado tipo de atributo.\nCorrespondem, respectivamente, às definições I, II e III:</item>
+        <item >Objeto transiente, método e cardinalidade;</item>
+        <item >Objeto ativo, polimorfismo e multiplicidade;</item>
+        <item >Objeto transiente, polimorfismo e multiplicidade;</item>
+        <item >Objeto persistente, herança e enumeração;</item>
+        <item >Objeto ativo, mensagem e enumeração;</item>
+        <item >d</item>
+    </string-array>    
+    
+	<string-array name="q12">
+	    <item >POO</item>
+        <item >Sobre o conceito de abstração é INCORRETO afirmar:</item>
+        <item >É uma técnica para controlar a complexidade pela ênfase em características essenciais e pela supressão de detalhes;</item>
+        <item >Para construção de modelos é importante desconsiderar alguns aspectos do mundo real, visando controlar a complexidade;</item>
+        <item >Com a abstração vamos modelar somente o que é relevante para o contexto do sistema;</item>
+        <item >Por exemplo, como os detalhes ficam internos e escondidos no objeto Pessoa podemos entender que este objeto pode possuir qualquer característica de uma Pessoa do mundo real;</item>
+        <item >No projeto de uma Classe não existe a necessidade do uso da técnica de abstração. Assim, devemos projetá-la com os seus atributos, métodos e interface;</item>
+        <item >e</item>
+    </string-array>    
+    
+	<string-array name="q13">
+	    <item >POO</item>
+        <item >A descrição de um conjunto de entidades (reais ou abstratas) de um mesmo tipo e com as mesmas características e comportamentos. Trata-se da definição de:</item>
+        <item >String;</item>
+        <item >Método;</item>
+        <item >Conjunto;</item>
+        <item >Classe;</item>
+        <item >Objeto;</item>
+        <item >d</item>
+    </string-array>    
+    
+	<string-array name="q14">
+	    <item >POO</item>
+        <item >Método especial destinado ao preparo de novos objetos durante sua instanciação. Pode ser acionado por meio do operador new, recebendo parâmetros como métodos comuns, o que permite caracterizar os objetos já na instanciação. Trata-se de:</item>
+        <item >Construtor;</item>
+        <item >Atributo;</item>
+        <item >Herança;</item>
+        <item >Herança múltipla;</item>
+        <item >Polimorfismo;</item>
+        <item >a</item>
+    </string-array>    
+    
+	<string-array name="q15">
+	    <item >POO</item>
+        <item >Em relação à orientação a objetos, considere:\n\"Um dos mecanismos fundamentais na programação orientada a objetos é o conceito de redefinição, que ocorre quando um método, cuja assinatura já tenha sido especificada, recebe uma nova definição em uma classe derivada.\"\n\"A linguagem de programação orientada a objetos deve suportar o conceito de ligação tardia (late binding), visto que a definição do método que é candidato a ser efetivamente invocado só ocorre durante a execução do programa.\"\nO mecanismo de redefinição, juntamente com o conceito de ligação tardia, é a chave para a utilização adequada de:</item>
+        <item >Polimorfismo;</item>
+        <item >Objetos de classes derivadas;</item>
+        <item >Restrições de acesso;</item>
+        <item >polimorfismo e herança;</item>
+        <item >Heranca múltipla;</item>
+        <item >a</item>
+    </string-array>    
+    
+	<string-array name="q16">
+	    <item >POO</item>
+        <item >Sobre a programação orientada a objetos, analise:\nI. É a técnica de esconder ou proteger informações. Para que exista comunicação o objeto disponibiliza uma interface de comunicação. Exibi-se, portanto, o \"o quê\" o objeto faz, abstraindo o \"como\" é realizado. Assim, para se utilizar este objeto é necessário conhecer apenas seu conjunto de assinaturas, ou seja, a sua interface de comunicação. Os detalhes de implementação são encapsulados, elevando o nível de abstração.\nII. Ocorre quando temos dois ou mais métodos em uma mesma classe com nomes iguais, porém com parâmetros diferentes.\nIII. É a situação em que um método de mesma assinatura é implementado em pelo menos duas classes diferentes que estendem da mesma superclasse possui comportamentos diferenciados.\nAs sentenças acima definem respectivamente:</item>
+        <item >Encapsulamento, sobregarga, e polimorfismo;</item>
+        <item >Abstração, polimorfismo, e sobrescrita;</item>
+        <item >Encapsulamento, sobrescrtia, e sobrecarga;</item>
+        <item >Abstração, sobrecarga, e polimorfismo;</item>
+        <item >Encpsulamento, sobrecarga, e subrescrita;</item>
+        <item >a</item>
+    </string-array>    
+    
+	<string-array name="q17">
+	    <item >POO</item>
+        <item >Na taxonomia utilizada para as formas de polimorfismo são, respectivamente, dois tipos categorizados como universal e dois como Ad Hoc:</item>
+        <item >Sobrecarga e Coerção; Paramétrico e Inclusão;</item>
+        <item >Sobrecarga e Inclusão; Paramétrico e Coerção;</item>
+        <item >Paramétrico e Sobrecarga; Inclusão e Coerção;</item>
+        <item >Paramétrico e Coerção; Sobrecarga e Inclusão;</item>
+        <item >Paramétrico e Inclusão; Sobrecarga e Coerção;</item>
+        <item >e</item>
+    </string-array>    
+    
+	<string-array name="q18">
+	    <item >POO</item>
+        <item >Classes que encapsulam os tipos primitivos como objetos, agregando funcionalidades de conversão, são as chamadas, especificamente, classes:</item>
+        <item >Aninhadas;</item>
+        <item >Abstratas;</item>
+        <item >Primitivas;</item>
+        <item >Mothers;</item>
+        <item >Wrappers;</item>
+        <item >e</item>
+    </string-array>    
+    
+	<string-array name="q19">
+	    <item >POO</item>
+        <item >Quando num programa que utiliza linguagem orientada a objetos aparece um objeto que realiza ações diferentes, dependendo da operação, ou seja, a mesma operação pode atuar de modos diversos em classes diferentes, está-se diante de um(a):</item>
+        <item >Herança múltipla;</item>
+        <item >Polimorfismo;</item>
+        <item >Caso de uso de engenharia reversa;</item>
+        <item >Atributo multivalorado;</item>
+        <item >Superclasse;</item>
+        <item >b</item>
+    </string-array>  
+    
+	<string-array name="q20">
+	    <item >POO</item>
+        <item >Dentro do paradigma de programação orientada a objetos (POO), há um mecanismo pelo qual uma classe pode estender outra classe, aproveitando seus métodos e atributos. Assinale a alternativa que apresenta o nome desse mecanismo.</item>
+        <item >Herança;</item>
+        <item >Mensagem;</item>
+        <item >Encapsulamento;</item>
+        <item >Polimorfismo;</item>
+        <item >Subclasse;</item>
+        <item >a</item>
+    </string-array>    
+    
+	<string-array name="q21">
+	    <item >POO</item>
+        <item >Na programação orientada a objetos existem quatro tipos de polimorfismos possíveis de serem aplicados na estrutura de uma classe, a saber:</item>
+        <item >Hierárquico, Sobrecarga, Procedural e Coerção;</item>
+        <item >Incursivo, Exclusivo, Herdado e Implementado;</item>
+        <item >Inclusão, Paramétrico, Sobrecarga e Coerção;</item>
+        <item >Procedural, Hierárquico, Paramétrico e Implementado;</item>
+        <item >Sobrecarga, Coerção, Herdado e Implementado;</item>
+        <item >c</item>
+    </string-array>    
+    
+	<string-array name="q22">
+	    <item >POO</item>
+        <item >No âmbito dos princípios de concepção e programação orientada a objeto, é correto afirmar que:\n\"Um objeto da subclasse é um objeto da superclasse, ou seja, os objetos da subclasse podem ser tratados como objetos da superclasse.\"\nEsta afirmação é possível quando se refere ao contexto de:</item>
+        <item >Reutilização;</item>
+        <item >Abstração;</item>
+        <item >Polimorfismo;</item>
+        <item >Herança;</item>
+        <item >Encapsulamento;</item>
+        <item >d</item>
+    </string-array>    
+    
+	<string-array name="q23">
+	    <item >POO</item>
+        <item >Na programação orientada a objetos, são características dos objetos:</item>
+        <item >As classes, os métodos e as mensagens;</item>
+        <item >A identidade, os atributos e as operações;</item>
+        <item >O encapsulamento, a herança e o polimorfismo;</item>
+        <item >A instanciação, a generalização e a especialização;</item>
+        <item >A classificação, a composição e a decomposição;</item>
+        <item >B</item>
+    </string-array>    
+    
+	<string-array name="q24">
+	    <item >POO</item>
+        <item >Compartilhamento de atributos e operações genéricas entre diversas classes descendentes de uma classe ancestral remete ao conceito de:</item>
+        <item >Herança;</item>
+        <item >Cardinalidade;</item>
+        <item >Encapsulamento;</item>
+        <item >Agregação;</item>
+        <item >Multiplicidade;</item>
+        <item >a</item>
+    </string-array>    
+    
+	<string-array name="q25">
+	    <item >POO</item>
+        <item >Além dos conceitos de objeto e classe, o paradigma da orientação a objetos envolve os princípios de:</item>
+        <item >Abstração, métodos, instâncias e herança;</item>
+        <item >Abstração, encapsulamento, herança e polimorfismo;</item>
+        <item >Abstração, encapsulamento, generalização e especialização;</item>
+        <item >Generalização, especialização, herança e polimorfismo;</item>
+        <item >Atributos, métodos, instâncias e mensagens;</item>
+        <item >b</item>
+    </string-array>    
+    
+	<string-array name="q26">
+	    <item >POO</item>
+        <item >Um analista desenvolveu métodos de impressão de dados com a mesma assinatura para três classes de impressoras (jato de tinta, laser e matricial) derivadas de uma mesma superclasse impressora. Tal prática:</item>
+        <item >Aplica o conceito de herança múltipla;</item>
+        <item >Aplica o conceito de polimorfismo;</item>
+        <item >Constitui-se em ferimento à regra de herança;</item>
+        <item >Visa ao aumento da coesão entre os atributos da superclasse;</item>
+        <item >Tal operação não é suportada na orientação a objetos;</item>
+        <item >b</item>
+    </string-array>    
+    
+	<string-array name="q27">
+	    <item >POO</item>
+        <item >Com relação à programação orientada a objetos, assinale a opção correta.</item>
+        <item >Um código orientado a objetos é obrigatoriamente de execução paralela: cada objeto é uma instância em execução simultânea no tempo a todos os outros objetos;</item>
+        <item >A estrutura interna de um objeto possui dois componentes básicos: atributos, que descrevem o estado do objeto; e métodos, que são responsáveis pela comunicação entre objetos;</item>
+        <item >Polimorfismo e sobrecarga são características importantes e exclusivas da programação orientada a objetos;</item>
+        <item >Classes abstratas não possuem atributos e se caracterizam por possuir métodos que podem ser criados dinamicamente quando essas classes são instanciadas;</item>
+        <item >Na herança múltipla, uma classe pode ter mais de um ascendente imediato, em contraste com a herança simples, em que uma classe somente pode ter um ascendente. No caso da herança múltipla, pode haver diferentes tipos de conflitos entre as propriedades das classes ascendentes;</item>
+        <item >e</item>
+    </string-array>    
+    
+	<string-array name="q28">
+	    <item >POO</item>
+        <item >\"A cidade de São Paulo, que possuía uma população de 10.000.000 de habitantes, teve um aumento de mais 2.000.000 de novos habitantes.\"\nNa associação da frase acima aos conceitos da modelagem orientada a objeto, é correto afirmar que São Paulo, população e aumento, referem-se, respectivamente, a:</item>
+        <item >Classe, objeto, instância de classe;</item>
+        <item >Objeto, atributo, implementação por um método do objeto;</item>
+        <item >Classe, objeto, atributo;</item>
+        <item >Objeto, instância, operação;</item>
+        <item >Classe, objeto, associação pelo método de agregação;</item>
+        <item >b</item>
+    </string-array>    
+    
+	<string-array name="q29">
+	    <item >POO</item>
+        <item >Sobre a programação orientada a objetos, analise:\nI. Neste tipo de programação, objetos executam ações, mas não suportam propriedades ou atributos.\nII. Uma classe especifica o formato geral de seus objetos.\nIII. As propriedades e ações disponíveis para um objeto não dependem de sua classe.\nIV. A tecnologia orientada a objetos permite que classes projetadas adequadamente sejam reutilizáveis em vários projetos.\nEstá correto o que consta em:</item>
+        <item >I e II, apenas;</item>
+        <item >II e III, apenas;</item>
+        <item >II e IV, apenas;</item>
+        <item >III e IV, apenas;</item>
+        <item >I, II, III</item>
+        <item >c</item>
+    </string-array>    
+    
+	<string-array name="q30">
+	    <item >POO</item>
+        <item >\"É o mecanismo pelo qual uma classe pode estender outra classe, aproveitando seus comportamentos e variáveis possíveis.\"\nNa programação orientada a objetos esta afirmação refere-se aos conceitos essenciais de:</item>
+        <item >Herança, métodos e atributos;</item>
+        <item >Herança, abstração e associação;</item>
+        <item >Subclasse, instância e associação;</item>
+        <item >Subclasse, encapsulamento e abstração;</item>
+        <item >Encapsulamento, polimorfismo e interface;</item>
+        <item >a</item>
+    </string-array>    
+    
+	<string-array name="q31">
+	    <item >POO</item>
+        <item >Classes e objetos são dois conceitos-chave da programação orientada a objetos. Com relação a estes conceitos, é correto afirmar que:</item>
+        <item >Uma classe é uma descrição de um ou mais objetos por meio de um conjunto uniforme de atributos e serviços. Além disso, pode conter uma descrição de como criar novos objetos na classe;</item>
+        <item >Uma classe é capaz de armazenar estados através de seus atributos e reagir a mensagens enviadas a ela, assim como se relacionar e enviar mensagens a outras classes;</item>
+        <item >Uma classe é uma abstração de alguma coisa no domínio de um problema ou na sua implementação, refletindo a capacidade de um sistema para manter informações sobre ela, interagir com ela ou ambos;</item>
+        <item >Um objeto em uma classe é apenas uma definição, pois a ação só ocorre quando o objeto é invocado através de um método;</item>
+        <item >Herança é o mecanismo pelo qual um objeto pode estender outro objeto, aproveitando seus comportamentos e variáveis possíveis;</item>
+        <item >a</item>
+    </string-array>    
+    
+	<string-array name="q32">
+	    <item >POO</item>
+        <item >Na programação orientada a objetos, o encapsulamento:</item>
+        <item >É a base de toda a abordagem dessa metodologia de programação e diz-se que um dado está encapsulado quando envolvido por código de forma que só é visível na rotina onde foi criado; o mesmo acontece com uma rotina, que sendo encapsulada, suas operações internas são invisíveis às outras rotina;</item>
+        <item >Pode ser entendido como sendo um conjunto de instâncias criadas a partir de um outro conjunto de instâncias com características semelhantes;</item>
+        <item >É definido como sendo uma técnica que permite a um código possuir \"vários comportamentos\" ou produzir \"vários comportamentos\";</item>
+        <item >Possibilita a criação de uma nova classe de modo que essa classe (denominada subclasse, classe-filha ou classe derivada) herda todas as características da classe-mãe (denominada superclasse, classe base ou classe primitiva); podendo, ainda, a classe-filha possuir propriedades e métodos próprios;</item>
+        <item >É considerado como a habilidade de modelar características do mundo real do problema que o programador esteja tentando resolver;</item>
+        <item >a</item>
+    </string-array>    
+    
+	<string-array name="q33">
+	    <item >POO</item>
+        <item >Analise as seguintes afirmações relativas à programação Orientada a Objetos:\nI. O polimorfismo possibilita que o mesmo nome possa ser utilizado em diferentes métodos em uma mesma classe, desde que, por exemplo, as quantidades de parâmetros sejam diferentes.\nII. Os métodos estáticos, quando executados, acessam apenas os atributos de instância da classe.\nIII. O uso de um mesmo nome para identificar diferentes implementações dos métodos pode ocorrer na definição de construtores.\nIV. Na hierarquia de classes, a herança múltipla ocorre quando existem diversas classes imediatamente abaixo da classe em questão.\nEstão corretos os itens:</item>
+        <item >I e II, apenas;</item>
+        <item >II e III, apenas;</item>
+        <item >III e IV, apenas;</item>
+        <item >I e III, apenas;</item>
+        <item >II e IV, apenas;</item>
+        <item >d</item>
+    </string-array>    
+    
+	<string-array name="q34">
+	    <item >POO</item>
+        <item >Na programação Orientada a Objetos:</item>
+        <item >As classes definem o comportamento dinâmico de uma instância;</item>
+        <item >As classes definem os serviços que podem ser solicitados a um construtor;</item>
+        <item >A  união de todos os objetos de uma classe forma seu método construtor;</item>
+        <item >O  diagrama de classes reflete o comportamento dinâmico do programa;</item>
+        <item >As Classes são tipos de objetos que descrevem as informações armazenadas e os serviços providos por um objeto;</item>
+        <item >e</item>
+    </string-array>    
+    
+	<string-array name="q35">
+	    <item >POO</item>
+        <item >Que característica NÃO é fundamental em uma linguagem de programação orientada a objetos?</item>
+        <item >Criação de classes;</item>
+        <item >Encapsulamento;</item>
+        <item >Herança simples;</item>
+        <item >Herança múltipla;</item>
+        <item >Instanciação de objetos;</item>
+        <item >d</item>
+    </string-array>    
+    
+	<string-array name="q36">
+	    <item >POO</item>
+        <item >Numa linguagem de programação orientada a objetos é importante restringir a visibilidade de alguns atributos para garantir o conceito de:</item>
+        <item >Encapsulamento;</item>
+        <item >Herança;</item>
+        <item >Classe;</item>
+        <item >Polimorfismo;</item>
+        <item >Instanciação;</item>
+        <item >a</item>
+    </string-array>    
+    
+	<string-array name="q37">
+	    <item >POO</item>
+        <item >Analise as seguintes afirmações relativas a programação Orientada a Objetos:\nI. As informações em um programa desenvolvido segundo a orientação a objetos são armazenadas, por herança, nas classes.\nII. Em um programa, os objetos que precisam ser armazenados em memória não volátil são denominados objetos persistentes.\nIII. Na programação orientada a objetos, quando se utiliza um Banco de Dados relacional, deve-se criar métodos para mapear, em tabelas, os objetos que serão armazenados.\nIV. Em uma aplicação podem existir múltiplas instâncias de uma mesma classe e estas conterão diferentes atributos de instâncias.\nEstão corretos os itens:</item>
+        <item >I e II, apenas;</item>
+        <item >II e III, apenas;</item>
+        <item >III e IV, apenas;</item>
+        <item >I e IV, apenas;</item>
+        <item >II e IV, apenas;</item>
+        <item >b</item>
+    </string-array>    
+    
+	<string-array name="q38">
+	    <item >POO</item>
+        <item >Analise as afrmativas abaixo sobre os conceitos de Programação Orientada a Objetos.\nI. A herança, em orientação a objetos, está relacionada ao fato de que objetos podem herdar características comuns de outros objetos.\nII. O uso de mais de uma super classe imediata é usualmente denominado herança múltipla; ter somente uma super classe direta é denominado herança simples.\nIII. O desenvolvedor deve utilizar herança múltipla para agilizar os processos de busca e execução dos processos.\nAssinale a alternativa VERDADEIRA:</item>
+        <item >I e II, apenas;</item>
+        <item >I e III, apenas;</item>
+        <item >II e III, apenas;</item>
+        <item >I, II e III;</item>
+        <item >Nenhuma das alternativas estão corretas;</item>
+        <item >a</item>
+    </string-array>    
+    
+	<string-array name="q39">
+	    <item >POO</item>
+        <item >\"Na programação orientada a objetos, é o princípio que oferece a capacidade de um método poder ser implementado de diferentes formas, ou mesmo de realizar diferentes ações, ou seja, um único serviço pode oferecer vaiações, conforme se aplique a diferentes subclasses de uma superclasse.\"\nO texto trata do princípio de:</item>
+        <item >Polimorfismo;</item>
+        <item >Reutilização;</item>
+        <item >Abstração;</item>
+        <item >Herança;</item>
+        <item >Encapsulamento;</item>
+        <item >a</item>
+    </string-array>    
+    
+	<string-array name="q40">
+	    <item >POO</item>
+        <item >\"Na programação orientada a objetos, é o princípio que oferece a capacidade de um método poder ser implementado de diferentes formas, ou mesmo de realizar diferentes ações, ou seja, um único serviço pode oferecer vaiações, conforme se aplique a diferentes subclasses de uma superclasse.\"\nNeste fagmento, o termo \"método\" significa:</item>
+        <item >Mecanismo pelo qual um objeto utiliza os recursos de outro;</item>
+        <item >Uma instância de uma classe;</item>
+        <item >Elemento que define as habilidades do objeto;</item>
+        <item >Chamada a um objeto para invocar uma classe;</item>
+        <item >Objeto capaz de armazenar estados através de seus atributos;</item>
+        <item >c</item>
+    </string-array>    
+    
+	<string-array name="q41">
+	    <item >POO</item>
+        <item >Analise as afrmativas abaixo sobre os conceitos de Programação Orientada a Objetos.\nI. Em diversos casos de orientação a objetos, é necessário realizar alguma(s) ação(ões) para o objeto poder ser destruído. Um exemplo disso é a desalocação dinâmica de memória.\nII. Tipos abstratos de dados só podem ser definidos em linguagens que implementam o paradigma de programação estruturada.\nIII. Uma das características das linguagens orientadas a objetos é que a ligação entre o método e uma mensagem é realizada tardiamente, em tempo de execução, ao contrário das linguagens imperativas, cujos tipos das variáveis, expressões e funções devem ser definidos e conhecidos em tempo de compilação.\nAssinale a alternativa VERDADEIRA:</item>
+        <item >I e II, apenas;</item>
+        <item >I e III, apenas;</item>
+        <item >II e III, apenas;</item>
+        <item >I, II e III;</item>
+        <item >Nenhuma das alternativas estão corretas;</item>
+        <item >b</item>
+    </string-array>    
+    
+	<string-array name="q42">
+	   <item >POO</item>
+       <item >Analise as afrmativas abaixo sobre os conceitos de Programação Orientada a Objetos.\nI. Os tipos de herança pública, privada e protegida referem-se ao escopo dos dados internos ao objeto e à visibilidade de suas funções-membro.\nII. Por ser considerada técnica insegura de programação, o conceito de encapsulamento não é mais indicado para uso em linguagem de programação orientada a objeto.\nIII. O princípio de abstração possui dois tipos fundamentais: a abstração de processos, que está diretamente ligada à programação orientada a objetos; e a abstração de dados, relacionada à utilização de subprogramas. Um conceito diretamente relacionado a ambos os tipos de abstração é o encapsulamento, que consiste no fornecimento de serviços bem definidos, sem necessariamente esclarecer como esses serviços são executados.\nAssinale a alternativa VERDADEIRA:</item>
+        <item >I e II, apenas;</item>
+        <item >I e III, apenas;</item>
+        <item >II e III, apenas;</item>
+        <item >I, II e III;</item>
+        <item >Nenhuma das alternativas estão corretas;</item>
+        <item >e</item>
+    </string-array>    
+    
+	<string-array name="q43">
+	    <item >POO</item>
+        <item >Analise as afrmativas abaixo sobre os conceitos de Programação Orientada a Objetos.\nI. Sobrecarga e sobreposição de métodos são implementações específicas de polimorfismo, já que, em ambos os casos, a decisão sobre o método a ser chamado é realizada em tempo de execução.\nII. A programação orientada a objetos pode ser considerada como uma aplicação do conceito de encapsulamento de processos que é utilizado, em programação estruturada, na definição de tipos abstratos de dados.\nIII. Uma das características das linguagens orientadas a objetos é que a ligação entre o método e uma mensagem é realizada tardiamente, em tempo de execução, ao contrário das linguagens imperativas, cujos tipos das variáveis, expressões e funções devem ser definidos e conhecidos em tempo de compilação.\nAssinale a alternativa VERDADEIRA:</item>
+        <item >I e II, apenas;</item>
+        <item >I e III, apenas;</item>
+        <item >II e III, apenas;</item>
+        <item >I, II e III;</item>
+        <item >Nenhuma das alternativas estão corretas;</item>
+        <item >b</item>
+    </string-array>    
+    
+	<string-array name="q44">
+	    <item >POO</item>
+        <item >Analise as afrmativas abaixo sobre os conceitos de Programação Orientada a Objetos.\nI. Uma mensagem enviada a um objeto pode levar à execução de um método que não esteja implementado na classe à qual o objeto pertence.\nII. A programação orientada a objetos pode ser considerada como uma aplicação do conceito de encapsulamento de processos que é utilizado, em programação estruturada, na definição de tipos abstratos de dados.\nIII. Um objeto apresenta três características básicas, o estado, a identidade e o comportamento. A parte de dados de um objeto é definida por um conjunto de mensagens, e a porção funcional, por um conjunto de atributos.\nAssinale a alternativa VERDADEIRA:</item>
+        <item >I e II, apenas;</item>
+        <item >I e III, apenas;</item>
+        <item >II e III, apenas;</item>
+        <item >I, II e III;</item>
+        <item >Nenhuma das alternativas estão corretas;</item>
+        <item >a</item>
+    </string-array>    
+    
+	<string-array name="q45">
+	    <item >POO</item>
+         <item >Analise as afrmativas abaixo sobre os conceitos de Programação Orientada a Objetos.\nI. Na programação orientada a objetos, uma classe é uma coleção de objetos que podem ser descritos por um conjunto básico de atributos e possuem operações semelhantes.\nII. A herança representa uma generalização, dessa forma, por meio de herança é feito o compartilhamento de atributos e operações entre classes, com base em um relacionamento hierárquico.\nIII. Um objeto apresenta três características básicas, o estado, a identidade e o comportamento. A parte de dados de um objeto é definida por um conjunto de mensagens, e a porção funcional, por um conjunto de atributos.\nAssinale a alternativa VERDADEIRA:</item>
+        <item >I e II, apenas;</item>
+        <item >I e III, apenas;</item>
+        <item >II e III, apenas;</item>
+        <item >I, II e III;</item>
+        <item >Nenhuma das alternativas estão corretas;</item>
+        <item >a</item>
+    </string-array>    
+    
+	<string-array name="q46">
+		<item >POO</item>
+	    <item >Analise as afrmativas abaixo sobre os conceitos de Programação Orientada a Objetos.\nI. Na orientação a objetos, um objeto tipicamente possui estado e operações definidas. O estado é representado por atributos, e as operações associadas ao objeto podem fornecer serviços a outros objetos. Os objetos são criados de acordo com classes.\nII. Há linguagens orientadas a objetos em que mensagens podem ser dinamicamente vinculadas a métodos usando-se variáveis polimórficas capazes de referenciar objetos de uma classe pai ou de suas subclasses. Nessas linguagens, quando se chama, via uma variável polimórfica, um método que foi definido na classe pai e sobreposto nas suas subclasses, a chamada é vinculada dinamicamente ao método.\nIII. Para que a interface pública de uma classe seja considerada coesa, é necessário que todos os recursos dessa interface estejam relacionados ao conceito que a classe representa.\nAssinale a alternativa VERDADEIRA:</item>
+        <item >I e II, apenas;</item>
+        <item >I e III, apenas;</item>
+        <item >II e III, apenas;</item>
+        <item >I, II e III;</item>
+        <item >Nenhuma das alternativas estão corretas;</item>
+        <item >c</item>
+    </string-array>    
+    
+	<string-array name="q47">
+	    <item >POO</item>
+	    <item >Analise as afrmativas abaixo sobre os conceitos de Programação Orientada a Objetos.\nI. Na programação orientada a objetos, o encapsulamento representa a ação em que diversas implementações de uma operação utilizam vários tipos de parâmetros diferentes.\nII. Por meio do encapsulamento, para impedir o acesso direto ao atributo de um objeto, são disponibilizados externamente apenas os métodos que alteram esse objeto. Por exemplo, não é preciso conhecer todos os detalhes dos circuitos de uma câmera digital para utilizá-la; a parte externa da câmera encapsula os detalhes, provendo para o usuário uma interface mais amigável.\nIII. Entende-se por polimorfismo a maneira de se reutilizar código por meio do aproveitamento de atributos e métodos de classes já existentes, com o objetivo de gerar novas classes mais específicas, que aproveitarão os recursos da classe hierarquicamente superior.\nAssinale a alternativa VERDADEIRA:</item>
+        <item >I e II, apenas;</item>
+        <item >I e III, apenas;</item>
+        <item >II e III, apenas;</item>
+        <item >I, II e III;</item>
+        <item >Nenhuma das alternativas estão corretas;</item>
+        <item >e</item>
+    </string-array>    
+    
+	<string-array name="q48">
+	    <item >POO</item>
+        <item >Em relação à programação orientação a objetos, a afirmativa de que o estado de um objeto não deve ser acessado diretamente, mas sim por intermédio de métodos de acesso (ou propriedades) está diretamente relacionada ao conceito de:</item>
+        <item >Herança;</item>
+        <item >Interface;</item>
+        <item >Classe abstrata;</item>
+        <item >Polimorfismo;</item>
+        <item >Encapsulamento;</item>
+        <item >e</item>
+    </string-array>    
+    
+	<string-array name="q49">
+	    <item >POO</item>
+        <item > Analise as seguintes afirmações relativas à Programação Orientada a Objetos:\nI. Em um programa orientado a objetos, as instâncias de uma classe armazenam os mesmos tipos de informações e apresentam o mesmo comportamento.\nII. Em uma aplicação orientada a objetos, podem existir múltiplas instâncias de uma mesma classe.\nIII. Em um programa orientado a objetos, as instâncias definem os serviços que podem ser solicitados aos métodos.\nIV. Em um programa orientado a objetos, o método construtor não pode ser executado quando a classe à qual pertence é executada.\nIndique a opção que contenha todas as afirmações VERDADEIRAS:</item>
+        <item >I e II, apenas;</item>
+        <item >II e III, apenas;</item>
+        <item >III e IV, apenas;</item>
+        <item >I e III, apenas;</item>
+        <item >II e IV, apenas;</item>
+        <item >a</item>
+    </string-array>    
+    
+	<string-array name="q50">
+	    <item >POO</item>
+        <item >No contexto da Orientação a Objetos, o conjunto de objetos que têm a mesma estrutura e o mesmo comportamento é denominado:</item>
+        <item >Herança;</item>
+        <item >Polimorfismo;</item>
+        <item >Array;</item>
+        <item >Lista;</item>
+        <item >Classe;</item>
+        <item >e</item>
+    </string-array>    
+ 
+</resources>

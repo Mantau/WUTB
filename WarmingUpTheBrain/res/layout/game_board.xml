@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Author   : Márcio José Mantau
+ * Version  : 1.0
+ * Date     : 02/10/2013
+ * Copyright:
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayoutGame"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:layout_margin="1dp"
+        layout="@layout/game_score_header" />
+    
+
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayoutGame"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_weight="402.67"
+    android:background="@color/WhiteSmoke"
+    android:stretchColumns="*" >
+
+    <include
+        android:id="@+id/includeTablerow01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        layout="@layout/tablerow_01" />
+
+    <include
+        android:id="@+id/includeTablerow02"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        layout="@layout/tablerow_02" />
+
+    <include
+        android:id="@+id/includeTablerow03"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        layout="@layout/tablerow_03" />
+
+    <include
+        android:id="@+id/includeTablerow04"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        layout="@layout/tablerow_04" />
+
+    <include
+        android:id="@+id/includeTablerow05"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        layout="@layout/tablerow_05" />
+
+    <include
+        android:id="@+id/includeTablerow06"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        layout="@layout/tablerow_06" />
+
+    <include
+        android:id="@+id/includeTablerow07"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        layout="@layout/tablerow_07" />
+
+    <include
+        android:id="@+id/includeTablerow08"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        layout="@layout/tablerow_08" />
+</TableLayout>
+
+</LinearLayout>

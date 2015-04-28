@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Author   : Márcio José Mantau
+ * Version  : 1.0
+ * Date     : 02/10/2013
+ * Copyright:
+-->
+ 
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_help"
+        android:icon="@drawable/menu_help"
+        android:menuCategory="system"
+        android:title="@string/menu_help">
+    </item>
+    <item
+        android:id="@+id/menu_settings"
+        android:icon="@drawable/menu_settings"
+        android:menuCategory="system"
+        android:title="@string/menu_settings">
+    </item>
+    <item
+        android:id="@+id/menu_close"
+        android:icon="@drawable/menu_close"
+        android:menuCategory="system"
+        android:title="@string/menu_close">
+    </item>
+
+</menu>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Author   : Márcio José Mantau
+ * Version  : 1.0
+ * Date     : 02/10/2013
+ * Copyright:
+-->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item 
+        android:state_pressed="true" 
+        android:drawable="@drawable/fastscroll_thumb_pressed_holo" />
+    
+    <item 
+        android:drawable="@drawable/fastscroll_thumb_default_holo" />
+    
+</selector>

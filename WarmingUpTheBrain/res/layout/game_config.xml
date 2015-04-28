@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Author   : Márcio José Mantau
+ * Version  : 1.0
+ * Date     : 02/10/2013
+ * Copyright:
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayoutGameConfig"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/header_game2" >
+
+    <ScrollView
+        android:id="@+id/scrollViewGameConfig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayoutGameConfigActions"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <!-- Config content -->
+
+        <LinearLayout
+            android:id="@+id/linearLayoutGameConfigContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- Config connection -->
+
+            <include
+                layout="@layout/game_config_connection"
+                android:visibility="visible" />
+
+            <!-- Config Fltering Informations -->
+
+            <TextView
+                android:id="@+id/textViewConfigHeaderFilteringOptions"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="@string/str_filtering_options"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <!-- Config User's List -->
+
+            <include
+                layout="@layout/game_config_userlist"
+                android:visibility="visible" />
+
+            <!-- Config Question's board -->
+
+            <include
+                layout="@layout/game_config_gameboard"
+                android:visibility="visible" />
+
+            <!-- Config User's List -->
+
+            <include
+                layout="@layout/game_config_terminal"
+                android:visibility="visible" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Config apply changes -->
+
+    <include
+        android:id="@+id/relativeLayoutGameConfigActions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        layout="@layout/game_config_actions" />
+
+</RelativeLayout>

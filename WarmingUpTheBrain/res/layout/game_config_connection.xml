@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Author   : Márcio José Mantau
+ * Version  : 1.0
+ * Date     : 02/10/2013
+ * Copyright:
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayoutGameConfigConnection"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:background="@drawable/header_game2" >
+
+    <!-- Config connection -->
+
+    <TextView
+        android:id="@+id/textViewConfigHeaderConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="@string/connectionOptions"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textViewConfigIp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewConfigHeaderConnection"
+        android:layout_marginLeft="20dp"
+        android:text="@string/str_addressserver" />
+
+    <EditText
+        android:id="@+id/editTextConfigAddressServer"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewConfigIp"
+        android:background="@drawable/edit_text_holo_light"
+        android:digits="0123456789."
+        android:ems="10"
+        android:text="@string/str_addressserversample" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextConfigPortServer"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextConfigAddressServer"
+        android:layout_alignLeft="@+id/textViewConfigPort"
+        android:layout_alignRight="@+id/textViewConfigPort"
+        android:background="@drawable/edit_text_holo_light"
+        android:digits="0123456789"
+        android:ems="10"
+        android:text="@string/str_port_server_sample" />
+
+    <TextView
+        android:id="@+id/textViewConfigPort"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextConfigAddressServer"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/editTextConfigAddressServer"
+        android:text="@string/str_port" />
+
+    <Button
+        android:id="@+id/buttonConfigTryConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextConfigPortServer"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/editTextConfigPortServer"
+        android:background="@drawable/button_selector"
+        android:text="@string/str_try" />
+
+</RelativeLayout>

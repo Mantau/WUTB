@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Author   : Márcio José Mantau
+ * Version  : 1.0
+ * Date     : 02/10/2013
+ * Copyright:
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayoutUserLIstHeaderOtherGroup"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    android:background="@drawable/tab_selected"
+    android:gravity="center" >
+
+    <ImageView
+        android:id="@+id/imageViewUserLIstHeaderOtherGroupImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/group" />
+
+    <TextView
+        android:id="@+id/textViewUserLIstHeaderOtherGroupUserStatus"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewUserLIstHeaderOtherGroupUserName"
+        android:layout_alignBottom="@+id/textViewUserLIstHeaderOtherGroupUserName"
+        android:layout_alignParentRight="true"
+        android:text="(online)"
+        android:textColor="@color/Green"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textViewUserLIstHeaderOtherGroupUserName"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/textViewUserLIstHeaderOtherGroupUserStatus"
+        android:layout_toRightOf="@+id/imageViewUserLIstHeaderOtherGroupImage"
+        android:text="Username"
+        android:textColor="@color/DarkBlue"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewUserLIstHeaderOtherGroupUserName"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewUserLIstHeaderOtherGroupUserStatus" >
+
+        <ImageView
+            android:id="@+id/imageViewUserLIstHeaderOtherGroupView"
+            android:layout_width="25dp"
+        	android:layout_height="25dp"
+            android:src="@drawable/view" />
+
+        <TextView
+            android:id="@+id/textViewUserLIstHeaderOtherGroupView"
+            android:layout_width="40dp"
+        	android:layout_height="25dp"
+            android:text="00"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageView
+            android:id="@+id/imageViewUserLIstHeaderOtherGroupIncorrect"
+            android:layout_width="25dp"
+        	android:layout_height="25dp"
+            android:src="@drawable/incorrect" />
+
+        <TextView
+            android:id="@+id/textViewUserLIstHeaderOtherGroupIncorrect"
+            android:layout_width="40dp"
+        	android:layout_height="25dp"
+            android:text="00"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <ImageView
+            android:id="@+id/imageViewUserLIstHeaderOtherGroupCorrect"
+            android:layout_width="25dp"
+        	android:layout_height="25dp"
+            android:src="@drawable/correct" />
+
+        <TextView
+            android:id="@+id/textViewUserLIstHeaderOtherGroupCorrect"
+            android:layout_width="40dp"
+        	android:layout_height="25dp"
+            android:text="00"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <ImageView
+            android:id="@+id/imageViewUserLIstHeaderOtherGroupDots"
+            android:layout_width="25dp"
+        	android:layout_height="25dp"
+            android:src="@drawable/dots" />
+
+        <TextView
+            android:id="@+id/textViewUserLIstHeaderOtherGroupDots"
+            android:layout_width="40dp"
+        	android:layout_height="25dp"
+            android:text="00"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+
+</RelativeLayout>

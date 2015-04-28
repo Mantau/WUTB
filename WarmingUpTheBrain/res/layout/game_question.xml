@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Author   : Márcio José Mantau
+ * Version  : 1.0
+ * Date     : 02/10/2013
+ * Copyright:
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayoutQuestion"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+	<RelativeLayout
+        android:id="@+id/relativeLayoutQuestionHeader"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/header_game"
+        android:gravity="top" >
+
+        <TextView
+            android:id="@+id/textViewStrQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:text="@string/str_question"
+            android:textColor="@color/Navy" />
+
+        <TextView
+            android:id="@+id/textViewTimeLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/str_time"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Navy" />
+
+        <TextView
+            android:id="@+id/textViewStrTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="60dp"
+            android:text="@string/str_timeleft"
+            android:textColor="@color/Navy" />
+
+        <TextView
+            android:id="@+id/textViewQuestionNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/textViewStrQuestion"
+            android:text="@string/str_number"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Navy" />
+
+        <TextView
+            android:id="@+id/textViewCategoryQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="@string/str_sampleTitleQuestion"
+            android:textAppearance="?android:attr/textAppearanceMediumInverse"
+            android:textColor="@color/Navy"
+            android:typeface="normal" />
+    </RelativeLayout>
+    
+    <ScrollView
+        android:id="@+id/scrollViewQuestionContent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/relativeLayoutFooter"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayoutQuestionHeader"
+        android:fillViewport="true"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutQuestionContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewQuestionContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/list_focused_holo"
+                android:padding="2dp"
+                android:paddingLeft="10dp"
+                android:text="@string/str_sampleContentQuestion"
+                android:textColor="@color/border"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:typeface="monospace" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupQuestionAlt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/btn_default_disabled_holo_light"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <RadioButton
+                    android:id="@+id/radioButtonAlt1"
+                    style="@style/RadioButtonAppTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/str_sampleOptionQuestion"
+                    android:textColor="@color/SaddleBrown" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonAlt2"
+                    style="@style/RadioButtonAppTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/str_sampleOptionQuestion"
+                    android:textColor="@color/SaddleBrown" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonAlt3"
+                    style="@style/RadioButtonAppTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/str_sampleOptionQuestion"
+                    android:textColor="@color/SaddleBrown" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonAlt4"
+                    style="@style/RadioButtonAppTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/str_sampleOptionQuestion"
+                    android:textColor="@color/SaddleBrown" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonAlt5"
+                    style="@style/RadioButtonAppTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/str_sampleOptionQuestion"
+                    android:textColor="@color/SaddleBrown" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/content_background"
+        android:gravity="bottom" >
+
+        <Button
+            android:id="@+id/buttonQuestionSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="2dp"
+            android:background="@drawable/button_selector"
+            android:text="@string/str_submitansware"
+            android:width="150dp" />
+
+        <Button
+            android:id="@+id/buttonQuestionCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/buttonQuestionSubmit"
+            android:layout_alignBottom="@+id/buttonQuestionSubmit"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="2dp"
+            android:background="@drawable/button_selector"
+            android:text="@string/str_cancel"
+            android:width="150dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

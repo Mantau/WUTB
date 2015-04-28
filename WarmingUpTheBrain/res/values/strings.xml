@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Author   : Márcio José Mantau
+ * Version  : 1.0
+ * Date     : 02/10/2013
+ * Copyright:
+-->
+ 
+<resources>
+
+    <!-- General values -->
+    <string name="str_appname">Warming up the Brain</string>
+    <string name="str_ok">OK</string>
+    <string name="str_cancel">Cancel(Unlock)</string>
+    <string name="str_back">Back</string>
+    <string name="str_next">Next</string>
+    <string name="str_exit">Exit</string>
+    
+    <!-- splash_screen.xml -->
+    <string name="str_welcome">Welcome!</string>
+    
+    <!-- menu_app.xml values -->
+    <string name="menu_help">Help</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_close">Quit the game</string>
+    
+    <!-- activity_help.xml values -->
+    <string name="title_help">Warming up the Brain Help</string>
+    <string name="return_toapp">Return to game</string>
+    <string name="return_toindex">Summary</string>
+    <string name="service_help_offline">You are disconnected! Please check your connection.</string>
+
+    <!-- activity_login.xml  values -->
+    <string name="str_username">Nickname</string>
+    <string name="str_password">Password</string>
+    <string name="str_login">Login</string>
+    <string name="str_email">Email</string>
+    <string name="str_selectteam">Select your team:</string>
+    <string name="str_team_a">Team A</string>
+    <string name="str_team_b">Team B</string>
+    <string name="str_start">Start the game!</string>
+    <string name="str_whiteSpace"></string>
+
+    <!-- activity_connection values -->
+    <string name="str_addressserver">Server address:</string>
+    <string name="str_addressserversample">192.168.0.100</string>
+    <string name="str_tryconnection">Connect!</string>
+
+    <!-- activity_question values -->
+    <string name="str_question">Question:</string>
+    <string name="str_timeleft">Time Left:</string>
+    <string name="str_time">1m00s</string>
+    <string name="str_number">00</string>
+    <string name="str_submitansware">Submit Answer</string>
+    <string name="str_numberquestion">00</string>
+    <string name="str_category">Category:</string>
+    <string name="str_sampleTitleQuestion">General Knowledge</string>
+    <string name="str_sampleContentQuestion">What is the main contribuition of..</string>
+    <string name="str_sampleOptionQuestion">Single-choice option X;</string>
+    
+    <!-- header_game.xml values -->
+    <string name="my_group">My Group: Group X</string>
+    <string name="other_group">Other Group: Group Y</string>
+    <string name="resume_participants">XX participants</string>
+    
+    <!-- header_group.mxl values -->
+    <string name="group_list">Group List</string>
+    <string name="chat">Chat</string>
+    <string name="type_message_here">Type a message here!</string>
+    <string name="connectionOptions">Connection Options</string>
+    
+    <!-- Game config options  -->
+    <string name="str_port_server_sample">8888</string>
+    <string name="str_filtering_options">Information filtering options</string>
+    <string name="str_filtering_user_list_options">Information displayed in user\'s list</string>
+    <string name="str_filtering_game_board_options">Information displayed in game board</string>
+    <string name="str_filtering_terminal_options">Information displayed in terminal</string>
+    <string name="str_filtering_question_viewed">Display questions viewed</string>
+    <string name="str_filtering_question_correct">Display questions correct</string>
+    <string name="str_filtering_question_incorrect">Display questions incorrect</string>
+    <string name="str_filtering_question_dots">Display questions dots</string>
+    <string name="str_filtering_game_board_colors">Use only Colors</string>
+    <string name="str_filtering_game_board_colors_icons">Use Colors and Icons</string>
+    <string name="str_filtering_game_board_colors_icons_labels">Use Colors, Icons and Labels</string>
+    <string name="str_filtering_terminal_actions">Display user\'s actions (historical)</string>
+    <string name="str_filtering_terminal_notifications">Display all received messages</string>
+    <string name="str_filtering_terminal_cachecoherence">Display all sent messages</string>
+    <string name="str_filtering_terminal_chat">Display chat messages</string>
+    <string name="str_filtering_terminal_warning">Display warning messages (debug the App)</string>
+    <string name="str_filtering_display_question_correct_othergroup">Display other group\'s correct questions</string>
+    <string name="str_filtering_terminal_error">Display error messages (I/O error, connection lost,...)</string>
+    <string name="str_try">Try!</string>
+    <string name="str_apply_changes">Apply my custom options!</string>
+    <string name="str_restore_changes">Default filtering options!</string>
+    <string name="str_port">Port</string>
+
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Author   : Márcio José Mantau
+ * Version  : 1.0
+ * Date     : 02/10/2013
+ * Copyright:
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayoutGameHeaderOtherGroup"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_margin="1dp"
+    android:layout_weight="1"
+    android:background="@drawable/header_game" >
+
+    <TextView
+        android:id="@+id/textViewOtherGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:text="@string/other_group"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textViewOtherGroupParticipants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewOtherGroup"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:text="@string/resume_participants"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ImageView
+        android:id="@+id/imageViewOtherGroupCorrectAnswers"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/answares_group" />
+
+    <TextView
+        android:id="@+id/textViewOtherGroupCorrectAnswers"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/imageViewOtherGroupCorrectAnswers"
+        android:text="@string/str_number" />
+
+    <TextView
+        android:id="@+id/textViewOtherGroupPoints"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/str_number" />
+
+    <ImageView
+        android:id="@+id/imageViewOtherGroupPoints"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_toLeftOf="@+id/textViewOtherGroupPoints"
+        android:src="@drawable/dots_group" />
+
+</RelativeLayout>

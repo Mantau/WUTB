@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Author   : Márcio José Mantau
+ * Version  : 1.0
+ * Date     : 02/10/2013
+ * Copyright:
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayoutUserListRow"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    android:background="@drawable/tab_selected"
+    android:gravity="center" >
+
+    <ImageView
+        android:id="@+id/imageViewUserListRowImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/user" />
+
+    <TextView
+        android:id="@+id/textViewUserListRowUserStatus"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewUserListRowUsername"
+        android:layout_alignBottom="@+id/textViewUserListRowUsername"
+        android:layout_alignParentRight="true"
+        android:text="(online)"
+        android:textColor="@color/Green"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textViewUserListRowUsername"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/textViewUserListRowUserStatus"
+        android:layout_toRightOf="@+id/imageViewUserListRowImage"
+        android:text="Username"
+        android:textColor="@color/DarkBlue"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewUserListRowUsername"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewUserListRowUserStatus" >
+
+        <ImageView
+            android:id="@+id/imageViewUserListRowView"
+            android:layout_width="25dp"
+        	android:layout_height="25dp"
+            android:src="@drawable/view" />
+
+        <TextView
+            android:id="@+id/textViewUserListRowView"
+            android:layout_width="40dp"
+        	android:layout_height="25dp"
+            android:text="00"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageView
+            android:id="@+id/imageViewUserListRowIncorrect"
+            android:layout_width="25dp"
+        	android:layout_height="25dp"
+            android:src="@drawable/incorrect" />
+
+        <TextView
+            android:id="@+id/textViewUserListRowIncorrect"
+            android:layout_width="40dp"
+        	android:layout_height="25dp"
+            android:text="00"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <ImageView
+            android:id="@+id/imageViewUserListRowCorrect"
+            android:layout_width="25dp"
+        	android:layout_height="25dp"
+            android:src="@drawable/correct" />
+
+        <TextView
+            android:id="@+id/textViewUserListRowCorrect"
+            android:layout_width="40dp"
+        	android:layout_height="25dp"
+            android:text="00"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <ImageView
+            android:id="@+id/imageViewUserListRowDots"
+            android:layout_width="25dp"
+        	android:layout_height="25dp"
+            android:src="@drawable/dots" />
+
+        <TextView
+            android:id="@+id/textViewUserListRowDots"
+            android:layout_width="40dp"
+        	android:layout_height="25dp"
+            android:text="00"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+     
+    </LinearLayout>
+
+</RelativeLayout>

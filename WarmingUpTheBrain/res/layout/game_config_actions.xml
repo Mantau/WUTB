@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Author   : Márcio José Mantau
+ * Version  : 1.0
+ * Date     : 02/10/2013
+ * Copyright:
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayoutGameConfigActions"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:layout_alignParentLeft="true"
+    android:background="@drawable/header_game2"
+    android:gravity="center" >
+
+    <Button
+        android:id="@+id/buttonGameConfigRestoreChanges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_selector"
+        android:text="@string/str_restore_changes"
+        android:layout_marginRight="30dp" />
+
+    <Button
+        android:id="@+id/buttonGameConfigAppyChanges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_selector"
+        android:text="@string/str_apply_changes" />
+
+</LinearLayout>

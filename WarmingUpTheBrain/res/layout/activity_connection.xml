@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Author   : Márcio José Mantau
+ * Version  : 1.0
+ * Date     : 02/10/2013
+ * Copyright:
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayoutConnectionMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageViewConnectionFail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/connect_fail" />
+
+    <TextView
+        android:id="@+id/textViewIpPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextAddressServer"
+        android:layout_centerHorizontal="true"
+        android:text="@string/str_addressserver" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutConnectionFooter"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/header_game2"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/buttonTryConnection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_selector"
+            android:text="@string/str_tryconnection"
+            android:width="150dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextAddressServer"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayoutConnectionFooter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/edit_text_holo_light"
+        android:ems="10"
+        android:digits="0123456789."
+        android:text="@string/str_addressserversample" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

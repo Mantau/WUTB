@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Author   : Márcio José Mantau
+ * Version  : 1.0
+ * Date     : 02/10/2013
+ * Copyright:
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayoutGameConfigUserList"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:background="@drawable/header_game2"
+    android:orientation="vertical" >
+
+    <!-- Config User's List -->
+
+    <TextView
+        android:id="@+id/textViewConfigHeaderFilteringTerminal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/str_filtering_terminal_options"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <CheckBox
+        android:id="@+id/checkBoxConfigTerminalDisplayActions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="@string/str_filtering_terminal_actions" />
+
+    <CheckBox
+        android:id="@+id/checkBoxConfigTerminalDisplayErrors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="@string/str_filtering_terminal_error" />
+
+    <CheckBox
+        android:id="@+id/checkBoxConfigTerminalDisplayNotifications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="@string/str_filtering_terminal_notifications" />
+
+    <CheckBox
+        android:id="@+id/checkBoxConfigTerminalDisplayCacheCoherence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="@string/str_filtering_terminal_cachecoherence" />
+
+    <CheckBox
+        android:id="@+id/checkBoxConfigTerminalDisplayChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="@string/str_filtering_terminal_chat" />
+
+    <CheckBox
+        android:id="@+id/checkBoxConfigTerminalDisplayWarning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="@string/str_filtering_terminal_warning" />
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Author   : Márcio José Mantau
+ * Version  : 1.0
+ * Date     : 02/10/2013
+ * Copyright:
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayoutUserLIstHeaderMyGroup"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    android:background="@drawable/tab_selected"
+    android:gravity="center" >
+
+    <ImageView
+        android:id="@+id/imageViewUserLIstHeaderMyGroupImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/group" />
+
+    <TextView
+        android:id="@+id/textViewUserLIstHeaderMyGroupUserStatus"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewUserLIstHeaderMyGroupUsername"
+        android:layout_alignBottom="@+id/textViewUserLIstHeaderMyGroupUsername"
+        android:layout_alignParentRight="true"
+        android:text="(online)"
+        android:textColor="@color/Green"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textViewUserLIstHeaderMyGroupUserName"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/textViewUserLIstHeaderMyGroupUserStatus"
+        android:layout_toRightOf="@+id/imageViewUserLIstHeaderMyGroupImage"
+        android:text="Username"
+        android:textColor="@color/DarkBlue"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewUserLIstHeaderMyGroupUserName"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewUserLIstHeaderMyGroupUserStatus" >
+
+        <ImageView
+            android:id="@+id/imageViewUserLIstHeaderMyGroupView"
+            android:layout_width="25dp"
+        	android:layout_height="25dp"
+            android:src="@drawable/view" />
+
+        <TextView
+            android:id="@+id/textViewUserLIstHeaderMyGroupView"
+            android:layout_width="40dp"
+        	android:layout_height="25dp"
+            android:text="00"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageView
+            android:id="@+id/imageViewUserLIstHeaderMyGroupIncorrect"
+            android:layout_width="25dp"
+        	android:layout_height="25dp"
+            android:src="@drawable/incorrect" />
+
+        <TextView
+            android:id="@+id/textViewUserLIstHeaderMyGroupIncorrect"
+            android:layout_width="40dp"
+        	android:layout_height="25dp"
+            android:text="00"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <ImageView
+            android:id="@+id/imageViewUserLIstHeaderMyGroupCorrect"
+            android:layout_width="25dp"
+        	android:layout_height="25dp"
+            android:src="@drawable/correct" />
+
+        <TextView
+            android:id="@+id/textViewUserLIstHeaderMyGroupCorrect"
+            android:layout_width="40dp"
+        	android:layout_height="25dp"
+            android:text="00"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <ImageView
+            android:id="@+id/imageViewUserLIstHeaderMyGroupDots"
+            android:layout_width="25dp"
+        	android:layout_height="25dp"
+            android:src="@drawable/dots" />
+
+        <TextView
+            android:id="@+id/textViewUserLIstHeaderMyGroupDots"
+            android:layout_width="40dp"
+        	android:layout_height="25dp"
+            android:text="00"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+
+</RelativeLayout>
